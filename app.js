@@ -3,7 +3,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const date = new Date("2022-04-17T03:30:00");
+const date = new Date("2022-04-17T03:30:00".replace(/\s/, "T") + "Z");
 const seconds = Math.floor(date.getTime() / 1000);
 console.log(seconds);
 
